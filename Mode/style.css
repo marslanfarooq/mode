@@ -1,0 +1,47 @@
+html, body {
+    height: 100%; /* Ensure full height for centering */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Button press effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    button {
+        font-size: 14px; /* Smaller font on small screens */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
